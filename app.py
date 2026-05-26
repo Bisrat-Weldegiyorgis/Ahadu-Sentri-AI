@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
@@ -9,7 +10,13 @@ import threading
 import time
 
 app = FastAPI(title="Ahadu IDS (CIC-IDS Based)")
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # =====================================================
 # LOAD MODEL + FEATURES
 # =====================================================
