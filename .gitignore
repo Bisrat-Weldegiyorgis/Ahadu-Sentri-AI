@@ -1,0 +1,6 @@
+datasets/
+*.pkl
+processed_data.pkl
+__pycache__/
+*.pyc
+venv/
