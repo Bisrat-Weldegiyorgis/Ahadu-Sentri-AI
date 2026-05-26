@@ -45,8 +45,5 @@ Installation process
 6. **Access the API:**
    Open your browser and go to `http://127.0.0.1:8000/docs` to view the interactive API documentation.
 
-
-   ## Usage
-
-### Making Predictions
+check the live app: https://ahadu-sentri-ai.onrender.com/ui
 
